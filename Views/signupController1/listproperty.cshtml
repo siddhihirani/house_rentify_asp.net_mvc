@@ -1,0 +1,888 @@
+﻿@model project.Models.ListProperty
+
+<div class="div">
+
+
+
+    <div class="div-7">
+        <div class="div-8">List Your Property</div>
+        <div class="div-9">
+            <form action="/SignupController1/ListProperty" method="post" enctype="multipart/form-data" class="form-horizontal">
+            <div class="div-10">
+ 
+                <div class="div-11">
+                    <div class="div-12">
+                        <span style="
+                  font-family: Inria Sans, -apple-system, Roboto, Helvetica,
+                    sans-serif;
+                  font-weight: 700;
+                ">
+                            Owner Name
+                        </span>
+                        <span style="color: rgba(244, 81, 30, 1)">*</span>
+                    </div>
+                    <div class="div-13">
+                            <input type="text" name="OwnerName" id="name" placeholder="Enter Your Full Name" required>
+                    </div>
+                </div>
+                <div class="div-14">
+                    <div class="div-15">
+                        <span style="
+                  font-family: Inria Sans, -apple-system, Roboto, Helvetica,
+                    sans-serif;
+                  font-weight: 700;
+                ">
+                            Address
+                        </span>
+                        <span style="color: rgba(244, 81, 30, 1)">*</span>
+                    </div>
+                    <div class="div-16">
+                            <input type="text" name="Address" id="address" placeholder="Enter Address" required>
+                    </div>
+                </div>
+                <div class="div-17">
+                    <div class="div-18">
+                        Area
+                        <span style="color: rgba(244, 81, 30, 1)">*</span>
+                    </div>
+                    <div class="div-19">
+                            <input type="text" name="Area" id="area" placeholder="Enter Area" required>
+                    </div>
+                </div>
+            </div>
+            <div class="div-20">
+                <div class="div-21">
+                    <div class="div-22">
+                        <span style="
+                  font-family: Inria Sans, -apple-system, Roboto, Helvetica,
+                    sans-serif;
+                  font-weight: 700;
+                ">
+                            City
+                        </span>
+                        <span style="color: rgba(244, 81, 30, 1)">*</span>
+                    </div>
+                    <div class="div-23">
+                            <select name="City" id="city">
+                            <option value="rajkot">Rajkot</option>
+                            <option value="diu">Diu</option>
+                            <option value="kutch">Kutch</option>
+                            <option value="ahemdabad">Ahemdabad</option>
+                            <option value="surat">Surat</option>
+
+                        </select>
+                    </div>
+                </div>
+                <div class="div-24">
+                    <div class="div-25">
+                        <span style="
+                  font-family: Inria Sans, -apple-system, Roboto, Helvetica,
+                    sans-serif;
+                  font-weight: 700;
+                ">
+                            State
+                        </span>
+                        <span style="color: rgba(244, 81, 30, 1)">*</span>
+                    </div>
+                    <div class="div-26">
+                        <div class="div-27">
+                                <select name ="State" id="state">
+                                <option value="gujarat">Gujarat</option>
+                                <option value="rajasthan">Rajasthan</option>
+                                <option value="maharashtra">Maharashtra</option>
+                                <option value="madhya pradesh">Madhya Pradesh</option>
+                            </select>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="div-28">
+                    <div class="div-29">
+                        <span style="
+                  font-family: Inria Sans, -apple-system, Roboto, Helvetica,
+                    sans-serif;
+                  font-weight: 700;
+                ">
+                            House Type
+                        </span>
+                        <span style="color: rgba(244, 81, 30, 1)">*</span>
+                    </div>
+                    <div class="div-30">
+                        <div class="div-31">
+                                <select name="HouseType" id="house">
+                                <option value="">select room type</option>
+                                <option value="2bhk">2BHK</option>
+                                <option value="3bhk">3BHK</option>
+                                <option value="4bhk">4BHK</option>
+                            </select>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="div-32">
+                <div class="div-33">
+                    <div class="div-34">
+                        <div class="div-35">
+                            <span style="
+                    font-family: Inria Sans, -apple-system, Roboto, Helvetica,
+                      sans-serif;
+                    font-weight: 700;
+                  ">
+                                Price
+                            </span>
+                            <span style="color: rgba(244, 81, 30, 1)">*</span>
+                        </div>
+                        <div class="div-36">
+                            <span style="
+                    font-family: Inria Sans, -apple-system, Roboto, Helvetica,
+                      sans-serif;
+                    font-weight: 700;
+                  ">
+                                Type
+                            </span>
+                            <span style="color: rgba(244, 81, 30, 1)">*</span>
+                        </div>
+                    </div>
+                    <div class="div-37">
+                        <div class="div-38">
+                                <input type="number" name="Price" id="price" placeholder="Enter Price" required>
+                        </div>
+                        <div class="div-39">
+                            <div class="div-40">
+                                <select name="Type" id="type">
+                                    <option value="">select type</option>
+                                    <option value="furnished">Furnished</option>
+                                    <option value="unfurnished">Unfurnished</option>
+                                    <option value="fully">fullyfurnished</option>
+                                </select>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="div-41">
+                    <div class="div-42">
+                        <span style="font-weight: 500">Available For</span>
+                        <span style="font-weight: 500; color: rgba(244, 81, 30, 1)">*</span>
+                    </div>
+                    <div class="div-43">
+                        <div class="div-44">
+                                <select name="Availability" id="avail">
+                                <option value="">select for</option>
+                                <option value="girl">Girls</option>
+                                <option value="boy">Boys</option>
+                                <option value="family">Family</option>
+                            </select>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="div-45">
+                <span style="
+              font-family: Inria Sans, -apple-system, Roboto, Helvetica,
+                sans-serif;
+              font-weight: 700;
+            ">
+                    Description
+                </span>
+                <span style="
+              font-family: Inria Sans, -apple-system, Roboto, Helvetica,
+                sans-serif;
+              font-weight: 700;
+              color: rgba(244, 81, 30, 1);
+            ">
+                    *
+                </span>
+            </div>
+            <div class="div-46">
+                    <input type="text" name="Description" id="descript" placeholder="Enter Description" required>
+            </div>
+                <div class="div-47">Upload Photos</div>
+                <div class="div-48">
+                    <div class="div-49">
+                        <div class="div-50">
+                            <label for="photo-upload" style="
+                    font-family: Inria Sans, -apple-system, Roboto, Helvetica, sans-serif;
+                    font-weight: 400;
+                ">
+                                Drag your images here, or
+                                <span style="font-weight: 700; color: rgba(45, 75, 133, 1);">browse</span>
+                            </label>
+                            <input type="file" id="photo-upload" name="PhotoUrl" accept="image/jpeg, image/png">
+                        </div>
+                        <div class="div-51">Supported formats: JPG, JPEG, PNG</div>
+                    </div>
+                </div>
+            <div class="div-52">
+                    <button type="submit" class="submit-btn">List Your Property</button>
+                </div>
+           </form>
+
+        </div>
+    </div>
+</div>
+<style>
+    .div {
+        background-color: #6d85a2;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .div-2 {
+        background-color: #dfe8f3;
+        z-index: 10;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        gap: 20px;
+        font-size: 32px;
+        color: #000;
+        font-weight: 400;
+        padding: 34px 52px 4px;
+    }
+
+    @@media (max-width: 991px) {
+        .div-2 {
+            max-width: 100%;
+            flex-wrap: wrap;
+            padding: 0 20px;
+        }
+    }
+
+    .img {
+        aspect-ratio: 1.02;
+        object-fit: auto;
+        object-position: center;
+        width: 81px;
+        border-radius: 50%;
+    }
+
+    .div-3 {
+        align-self: start;
+        display: flex;
+        margin-top: 15px;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    @@media (max-width: 991px) {
+        .div-3 {
+            max-width: 100%;
+            flex-wrap: wrap;
+        }
+    }
+
+    .div-4 {
+        font-family: Inria Sans, sans-serif;
+        border-radius: 10px;
+        background-color: #bdcce0;
+        align-self: stretch;
+        flex-grow: 1;
+        white-space: nowrap;
+        padding: 16px 18px 9px;
+    }
+
+    @@media (max-width: 991px) {
+        .div-4 {
+            white-space: initial;
+            padding-right: 20px;
+        }
+    }
+
+    .div-5 {
+        color: #101112;
+        font-family: Inria Sans, sans-serif;
+        align-self: stretch;
+        flex-grow: 1;
+        flex-basis: auto;
+        margin: auto 0;
+    }
+
+    .div-6 {
+        font-family: Inria Sans, sans-serif;
+        align-self: stretch;
+        margin: auto 0;
+    }
+
+    .div-7 {
+        background-color: #f9f9f9;
+        align-self: center;
+        display: flex;
+        margin-top: -59px;
+        width: 100%;
+        max-width: 1130px;
+        flex-direction: column;
+        padding: 50px 20px 22px;
+    }
+
+    @@media (max-width: 991px) {
+        .div-7 {
+            max-width: 100%;
+        }
+    }
+
+    .div-8 {
+        color: #2d4b85;
+        text-align: center;
+        letter-spacing: 0.1px;
+        align-self: center;
+        margin-top: 71px;
+        white-space: nowrap;
+        font: 700 28px/114% Inria Sans, sans-serif;
+    }
+
+    @@media (max-width: 991px) {
+        .div-8 {
+            margin-top: 40px;
+            white-space: initial;
+        }
+    }
+
+    .div-9 {
+        display: flex;
+        margin-top: 70px;
+        flex-direction: column;
+        padding: 0 63px;
+    }
+
+    @@media (max-width: 991px) {
+        .div-9 {
+            max-width: 100%;
+            margin-top: 40px;
+            padding: 0 20px;
+        }
+    }
+
+    .div-10 {
+        display: flex;
+        justify-content: space-between;
+        gap: 9px;
+        letter-spacing: 0.2px;
+    }
+
+    @@media (max-width: 991px) {
+        .div-10 {
+            max-width: 100%;
+            flex-wrap: wrap;
+        }
+    }
+
+    .div-11 {
+        display: flex;
+        flex-grow: 1;
+        flex-basis: 0%;
+        flex-direction: column;
+    }
+
+    .div-12 {
+        color: #f4511e;
+        font: 600 17px/24px Poppins, sans-serif;
+    }
+
+    input#name {
+        align-items: start;
+        border-radius: 5px;
+        border: 1px solid #ddd;
+        background-color: #f9f9f9;
+        margin-top: 11px;
+        justify-content: center;
+        color: var(--second-text-color, #737373);
+        white-space: nowrap;
+        padding: 20px 60px 20px 18px;
+        font: 400 14px/200% Inria Sans, sans-serif;
+    }
+
+    @@media (max-width: 991px) {
+        .div-13 {
+            white-space: initial;
+            padding-right: 20px;
+        }
+    }
+
+    .div-14 {
+        display: flex;
+        flex-grow: 1;
+        flex-basis: 0%;
+        flex-direction: column;
+        white-space: nowrap;
+    }
+
+    @@media (max-width: 991px) {
+        .div-14 {
+            white-space: initial;
+        }
+    }
+
+    .div-15 {
+        color: #f4511e;
+        align-self: start;
+        margin-left: 16px;
+        font: 600 17px/24px Poppins, sans-serif;
+    }
+
+    @@media (max-width: 991px) {
+        .div-15 {
+            margin-left: 10px;
+            white-space: initial;
+        }
+    }
+
+    input#address {
+        align-items: start;
+        border-radius: 5px;
+        border: 1px solid #ddd;
+        background-color: #f9f9f9;
+        margin-top: 11px;
+        justify-content: center;
+        color: var(--second-text-color, #737373);
+        padding: 20px 60px 20px 18px;
+        font: 400 14px/200% Inria Sans, sans-serif;
+    }
+
+    @@media (max-width: 991px) {
+        .div-16 {
+            white-space: initial;
+            padding-right: 20px;
+        }
+    }
+
+    .div-17 {
+        display: flex;
+        flex-grow: 1;
+        flex-basis: 0%;
+        flex-direction: column;
+    }
+
+    .div-18 {
+        color: #f4511e;
+        font: 600 17px/24px Poppins, sans-serif;
+    }
+
+    input#area {
+        align-items: start;
+        border-radius: 5px;
+        border: 1px solid #e6e6e6;
+        background-color: #f9f9f9;
+        margin-top: 11px;
+        justify-content: center;
+        color: var(--second-text-color, #737373);
+        white-space: nowrap;
+        padding: 20px 60px 20px 21px;
+        font: 400 14px/200% Inria Sans, sans-serif;
+    }
+
+    @@media (max-width: 991px) {
+        .div-19 {
+            white-space: initial;
+            padding: 0 20px;
+        }
+    }
+
+    .div-20 {
+        display: flex;
+        margin-top: 30px;
+        justify-content: space-between;
+        gap: 20px;
+        letter-spacing: 0.2px;
+    }
+
+    @@media (max-width: 991px) {
+        .div-20 {
+            max-width: 100%;
+            flex-wrap: wrap;
+        }
+    }
+
+    .div-21 {
+        display: flex;
+        flex-grow: 1;
+        flex-basis: 0%;
+        flex-direction: column;
+    }
+
+    .div-22 {
+        color: #f4511e;
+        font: 600 17px/24px Poppins, sans-serif;
+    }
+
+    .div-23 {
+        align-items: start;
+        border-radius: 5px;
+        border: 1px solid #ddd;
+        background-color: #f9f9f9;
+        margin-top: 7px;
+        justify-content: center;
+        color: var(--second-text-color, #737373);
+        white-space: nowrap;
+        padding: 19px 60px 19px 18px;
+        font: 400 14px/200% Inria Sans, sans-serif;
+    }
+
+    @@media (max-width: 991px) {
+        .div-23 {
+            white-space: initial;
+            padding-right: 20px;
+        }
+    }
+
+    .div-24 {
+        display: flex;
+        flex-grow: 1;
+        flex-basis: 0%;
+        flex-direction: column;
+    }
+
+    .div-25 {
+        color: #f4511e;
+        font: 600 17px/24px Poppins, sans-serif;
+    }
+
+    .div-26 {
+        border-radius: 5px;
+        border: 1px solid #ddd;
+        background-color: #f9f9f9;
+        display: flex;
+        margin-top: 11px;
+        justify-content: space-between;
+        gap: 20px;
+        font-size: 14px;
+        color: var(--second-text-color, #737373);
+        font-weight: 400;
+        line-height: 200%;
+        padding: 19px 17px;
+    }
+
+    .div-27 {
+        font-family: Inria Sans, sans-serif;
+    }
+
+    .img-2 {
+        aspect-ratio: 1.75;
+        object-fit: auto;
+        object-position: center;
+        width: 14px;
+        fill: var(--second-text-color, #737373);
+        align-self: start;
+        margin-top: 5px;
+    }
+
+    .div-28 {
+        display: flex;
+        flex-grow: 1;
+        flex-basis: 0%;
+        flex-direction: column;
+    }
+
+    .div-29 {
+        color: #f4511e;
+        font: 600 17px/24px Poppins, sans-serif;
+    }
+
+    .div-30 {
+        border-radius: 5px;
+        border: 1px solid #ddd;
+        background-color: #f9f9f9;
+        display: flex;
+        margin-top: 7px;
+        justify-content: space-between;
+        gap: 20px;
+        font-size: 14px;
+        color: var(--second-text-color, #737373);
+        font-weight: 400;
+        line-height: 200%;
+        padding: 14px 17px;
+    }
+
+    .div-31 {
+        font-family: Poppins, sans-serif;
+        flex-grow: 1;
+        flex-basis: auto;
+    }
+
+    .img-3 {
+        aspect-ratio: 1;
+        object-fit: auto;
+        object-position: center;
+        width: 22px;
+    }
+
+    .div-32 {
+        display: flex;
+        margin-top: 30px;
+        justify-content: space-between;
+        gap: 20px;
+        letter-spacing: 0.2px;
+    }
+
+    @@media (max-width: 991px) {
+        .div-32 {
+            max-width: 100%;
+            flex-wrap: wrap;
+        }
+    }
+
+    .div-33 {
+        display: flex;
+        flex-grow: 1;
+        flex-basis: 0%;
+        flex-direction: column;
+    }
+
+    @@media (max-width: 991px) {
+        .div-33 {
+            max-width: 100%;
+        }
+    }
+
+    .div-34 {
+        display: flex;
+        width: 391px;
+        max-width: 100%;
+        justify-content: space-between;
+        gap: 20px;
+        font-size: 17px;
+        color: #f4511e;
+        font-weight: 600;
+        line-height: 24px;
+    }
+
+    .div-35 {
+        font-family: Poppins, sans-serif;
+    }
+
+    .div-36 {
+        font-family: Poppins, sans-serif;
+    }
+
+    .div-37 {
+        display: flex;
+        margin-top: 7px;
+        width: 100%;
+        justify-content: space-between;
+        gap: 20px;
+        font-size: 14px;
+        color: var(--second-text-color, #737373);
+        font-weight: 400;
+        line-height: 200%;
+    }
+
+    @@media (max-width: 991px) {
+        .div-37 {
+            max-width: 100%;
+            flex-wrap: wrap;
+        }
+    }
+
+    input#price {
+        font-family: Inria Sans, sans-serif;
+        align-items: start;
+        border-radius: 5px;
+        border: 1px solid #ddd;
+        background-color: #f9f9f9;
+        flex-grow: 1;
+        justify-content: center;
+        white-space: nowrap;
+        padding: 20px 60px 20px 18px;
+    }
+
+    @@media (max-width: 991px) {
+        .div-38 {
+            white-space: initial;
+            padding-right: 20px;
+        }
+    }
+
+    .div-39 {
+        border-radius: 5px;
+        border: 1px solid #ddd;
+        background-color: #f9f9f9;
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        padding: 14px 17px;
+    }
+
+    .div-40 {
+        font-family: Inria Sans, sans-serif;
+        align-self: start;
+        margin-top: 8px;
+    }
+
+    .img-4 {
+        aspect-ratio: 1;
+        object-fit: auto;
+        object-position: center;
+        width: 22px;
+    }
+
+    .div-41 {
+        display: flex;
+        flex-grow: 1;
+        flex-basis: 0%;
+        flex-direction: column;
+    }
+
+    .div-42 {
+        color: #f4511e;
+        font: 600 17px/24px Poppins, sans-serif;
+    }
+
+    .div-43 {
+        border-radius: 5px;
+        border: 1px solid #ddd;
+        background-color: #f9f9f9;
+        display: flex;
+        margin-top: 11px;
+        justify-content: space-between;
+        gap: 20px;
+        font-size: 14px;
+        color: var(--second-text-color, #737373);
+        font-weight: 400;
+        line-height: 200%;
+        padding: 14px;
+    }
+
+    .div-44 {
+        font-family: Inria Sans, sans-serif;
+        margin: auto 0;
+    }
+
+    .img-5 {
+        aspect-ratio: 1;
+        object-fit: auto;
+        object-position: center;
+        width: 22px;
+        fill: #f9f9f9;
+    }
+
+    .div-45 {
+        color: #f4511e;
+        letter-spacing: 0.2px;
+        margin-top: 31px;
+        font: 600 17px/24px Poppins, sans-serif;
+    }
+
+    @@media (max-width: 991px) {
+        .div-45 {
+            max-width: 100%;
+        }
+    }
+
+    input#descript {
+        align-items: start;
+        border-radius: 5px;
+        width: 100%;
+        border: 1px solid #e6e6e6;
+        background-color: #f9f9f9;
+        margin-top: 7px;
+        color: var(--second-text-color, #737373);
+        white-space: nowrap;
+        letter-spacing: 0.2px;
+        padding: 22px 60px 66px 20px;
+        font: 400 14px/200% Inria Sans, sans-serif;
+    }
+
+    @@media (max-width: 991px) {
+        .div-46 {
+            white-space: initial;
+            max-width: 100%;
+            padding-right: 20px;
+        }
+    }
+
+    .div-47 {
+        color: #444951;
+        text-transform: capitalize;
+        margin-top: 80px;
+        font: 700 18px Inria Serif, sans-serif;
+    }
+
+    @@media (max-width: 991px) {
+        .div-47 {
+            max-width: 100%;
+            margin-top: 40px;
+        }
+    }
+
+    .div-48 {
+        border-radius: 10px;
+        border: 1px dashed #2d4b85;
+        background-color: rgba(244, 81, 30, 0.01);
+        display: flex;
+        margin-top: 10px;
+        justify-content: center;
+        align-items: center;
+        white-space: nowrap;
+        text-align: center;
+        padding: 31px 60px;
+    }
+
+    @@media (max-width: 991px) {
+        .div-48 {
+            max-width: 100%;
+            white-space: initial;
+            padding: 0 20px;
+        }
+    }
+
+    .div-49 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    @@media (max-width: 991px) {
+        .div-49 {
+            white-space: initial;
+        }
+    }
+
+    .div-50 {
+        color: #2d4b85;
+        font: 500 16px Poppins, sans-serif;
+    }
+
+    @@media (max-width: 991px) {
+        .div-50 {
+            white-space: initial;
+        }
+    }
+
+    .div-51 {
+        color: rgba(0, 0, 0, 0.5);
+        align-self: center;
+        margin-top: 13px;
+        font: 400 12px Inria Sans, sans-serif;
+    }
+
+    @@media (max-width: 991px) {
+        .div-51 {
+            white-space: initial;
+        }
+    }
+
+    .div-52 {
+        border-radius: 9.08px;
+        background-color: #2d4b85;
+        align-self: center;
+        margin-top: 35px;
+        width: 217px;
+        max-width: 100%;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        white-space: nowrap;
+        letter-spacing: 0.15px;
+        padding: 25px 60px;
+        font: 400 16px/117% Inria Sans, sans-serif;
+    }
+
+    @@media (max-width: 991px) {
+        .div-52 {
+            white-space: initial;
+            padding: 0 20px;
+        }
+    }
+</style>
